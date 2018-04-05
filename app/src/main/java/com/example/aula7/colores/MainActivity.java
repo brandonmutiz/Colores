@@ -15,7 +15,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener{
     int seekA,seekR, seekG, seekB;
    SeekBar seekBarRed,seekBarGreen, seekBarBlue ,seekBarAlpha;
    View viewbackgroud;
@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
 
        // registerForContextMenu(textViewName);
+        seekBarRed.setOnSeekBarChangeListener(this);
+        seekBarGreen.setOnSeekBarChangeListener(this);
+        seekBarBlue.setOnSeekBarChangeListener(this);
+        seekBarAlpha.setOnSeekBarChangeListener(this);
 
 }
     public void updateBackground() {
@@ -75,6 +79,22 @@ public class MainActivity extends AppCompatActivity {
 
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menuinicio, menu);
+    }
+
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        updateBackground();
+
+    }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+
     }
 }
 
