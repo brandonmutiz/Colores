@@ -16,20 +16,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:text="Red"
-                android:textStyle="bold"
                 android:textSize="20sp"
-                />
+                android:textStyle="bold" />
+
             <SeekBar
                 android:id="@+id/id_sib_red"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:progress="128"
+                android:layout_gravity="center"
                 android:max="255"
-                android:layout_gravity="center"/>
+                android:progress="128" />
+
+            <TextView
+                android:id="@+id/id_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,11 +55,20 @@
                 />
             <SeekBar
                 android:id="@+id/id_sib_green"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:progress="128"
                 android:max="255"
                 android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/id_valor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,11 +83,20 @@
                 />
             <SeekBar
                 android:id="@+id/id_sib_blue"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:progress="128"
                 android:max="255"
                 android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/id_valor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,11 +111,20 @@
                 />
             <SeekBar
                 android:id="@+id/id_sib_alpha"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:progress="128"
                 android:max="255"
                 android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/id_valor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"/>
         </LinearLayout>
         <FrameLayout
             android:layout_width="match_parent"
